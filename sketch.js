@@ -7,9 +7,10 @@ var engine, world;
 var poly_img;
 
 var back_color = "";
-
+var backColor = "green";
 function preload() {
   getBackgroundColor();
+  back_color = backColor;
   poly_img = loadImage("polygon.png");
 }
 
@@ -131,4 +132,5 @@ async function getBackgroundColor() {
     backColor = "MidnightBlue";
   }
   back_color = backColor;
+
 }
